@@ -62,9 +62,44 @@ public class ControlFlowExercises {
 //            }
 
         Scanner newTable = new Scanner(System.in);
-        System.out.println("");
-
-
-
+//        System.out.println("What number would you like to go up to?");
+//        int theNum = newTable.nextInt();
+//        System.out.println("Here is your table!");
+//        System.out.println("number  |  squared   |  cubed");
+//        System.out.println("------  |  -------   |  -----");
+//        for(int i = 0; i <= theNum; i++){
+//            System.out.println(i + "       |" + i*i + "           | " + i*i*i);
+//
+//        }
+        System.out.println("Please enter a number between 0 and 100");
+        int numGrades = newTable.nextInt();
+        if((numGrades <= 100) && (numGrades >= 99 )){
+            String gradePlus = "A+";
+            System.out.println(gradePlus);
+        }else if((numGrades <= 98) && (numGrades >= 88 )) {
+            char grade = 'A';
+            System.out.println(grade);
+        }else if((numGrades <= 87) && (numGrades >= 86 )){
+            String gradePlus = "B+";
+            System.out.println(gradePlus);
+        }else if((numGrades <= 85) && (numGrades >= 80 )) {
+            char grade = 'B';
+            System.out.println(grade);
+        }else if((numGrades <= 79) && (numGrades >= 78 )){
+            String gradePlus = "C+";
+            System.out.println(gradePlus);
+        }else if((numGrades <= 77) && (numGrades >= 67 )) {
+            char grade = 'C';
+            System.out.println(grade);
+        }else if((numGrades <= 66) && (numGrades >= 65 )){
+            String gradePlus = "D+";
+            System.out.println(gradePlus);
+        }else if((numGrades <= 64) && (numGrades >= 60 )) {
+            char grade = 'D';
+            System.out.println(grade);
+        }else if((numGrades <= 59) && (numGrades >= 0 )) {
+            char grade = 'F';
+            System.out.println(grade);
+        }
     }
 }
