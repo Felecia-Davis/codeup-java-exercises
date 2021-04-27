@@ -38,7 +38,7 @@ public class HelloWorld {
 //        y-=x;
 
         double pi = 3.14159;
-        System.out.format("The value of pi is %.2f\n", pi);
+        System.out.format("The value of pi is approximately %.2f\n", pi);
 
         Scanner practice = new Scanner(System.in);
         System.out.println("Please enter an integer.");
@@ -50,7 +50,7 @@ public class HelloWorld {
         String secondWord = practice.next();
         String thirdWord = practice.next();
 
-        System.out.printf("These are your three words, %s %s %s\n", firstWord, secondWord, thirdWord);
+        System.out.printf("These are your three words, %s\n %s\n %s\n", firstWord, secondWord, thirdWord);
 
         System.out.println("Please enter a sentence\n.");
         String sentence = practice.nextLine();
