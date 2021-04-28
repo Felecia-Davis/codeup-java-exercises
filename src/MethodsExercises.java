@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static void main(String[] args) {
         System.out.println(addition(2, 3));
@@ -6,6 +8,7 @@ public class MethodsExercises {
         System.out.println(division(6, 2));
         System.out.println(modulus(1, 2));
         System.out.println(multiply(2, 3));
+        System.out.println(getInteger(0, 10));
 
     }
 
@@ -41,7 +44,6 @@ public class MethodsExercises {
             result += num1;
 
 
-            //System.out.println(result);
         }
         return result;
     }
@@ -54,6 +56,32 @@ public class MethodsExercises {
 //        }
 //        while (i < num2);
 //        i++
-//        return result;
-//    }
-}
+//        return result; }
+
+
+    public static int getInteger(int min, int max){
+        Scanner practice = new Scanner(System.in);
+
+    //while((min < 1 ) ||  (max > 10)) {
+        if((min < 1 ) ||  (max > 10)) {
+            System.out.print("Enter two numbers between 1 and 10: ");
+            int less = practice.nextInt();
+            int greater = practice.nextInt();
+        }else (System.out.print("Numbers are in range.");
+        //getInteger(less, greater);
+
+
+
+    }
+
+
+
+        //int intNum = practice.nextInt();
+//        f (userInput > min && userInput < max) {
+//            System.out.printf("Congrats, your input of %d was within our min and max!", userInput);
+//            return userInput;
+//        }
+
+    }
+   // }
+
