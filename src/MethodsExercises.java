@@ -59,20 +59,20 @@ public class MethodsExercises {
 //        return result; }
 
 
-//    public static int getInteger(int min, int max) {
-//        Scanner practice = new Scanner(System.in);
-//        System.out.println("Enter a number between " + min + " and " + max);
-//        int num = practice.nextInt();
-//
-//        if (num > min && num < max) {
-//            System.out.println("Yes, your number is between " + min + " and " + max);
-//            return num;
-//
-//        } else {
-//            System.out.println("Your number is not in range.");
-//            return getInteger(min, max);
-//        }
-//    }
+    public static int getInteger(int min, int max) {
+        Scanner practice = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max);
+        int num = practice.nextInt();
+
+        if (num > min && num < max) {
+            System.out.println("Yes, your number is between " + min + " and " + max);
+            return num;
+
+        } else {
+            System.out.println("Your number is not in range.");
+            return getInteger(min, max);
+        }
+    }
 //Calculate the factorial of a number.
 //
 //    Prompt the user to enter an integer from 1 to 10.
