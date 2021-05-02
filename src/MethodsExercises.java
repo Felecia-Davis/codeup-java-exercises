@@ -9,6 +9,7 @@ public class MethodsExercises {
         System.out.println(modulus(1, 2));
         System.out.println(multiply(2, 3));
         //System.out.println(getInteger(1, 10));
+        factorial();
 
     }
 
@@ -58,21 +59,21 @@ public class MethodsExercises {
 //        i++
 //        return result; }
 
-
-    public static int getInteger(int min, int max) {
-        Scanner practice = new Scanner(System.in);
-        System.out.println("Enter a number between " + min + " and " + max);
-        int num = practice.nextInt();
-
-        if (num > min && num < max) {
-            System.out.println("Yes, your number is between " + min + " and " + max);
-            return num;
-
-        } else {
-            System.out.println("Your number is not in range.");
-            return getInteger(min, max);
-        }
-    }
+//
+//    public static int getInteger(int min, int max) {
+//        Scanner practice = new Scanner(System.in);
+//        System.out.println("Enter a number between " + min + " and " + max);
+//        int num = practice.nextInt();
+//
+//        if (num > min && num < max) {
+//            System.out.println("Yes, your number is between " + min + " and " + max);
+//            return num;
+//
+//        } else {
+//            System.out.println("Your number is not in range.");
+//            return getInteger(min, max);
+//        }
+//    }
 //Calculate the factorial of a number.
 //
 //    Prompt the user to enter an integer from 1 to 10.
@@ -90,17 +91,30 @@ public class MethodsExercises {
 //            3! = 1 x 2 x 3       = 6
 //            4! = 1 x 2 x 3 x 4   = 24
 
-//    public static void factorial() {
-//        Scanner numFactorial = new Scanner(System.in);
-//
-//       System.out.println("Enter an integer between 1 and 10.");
-//       long num = numFactorial.nextLong();
-//       for(int i = 1; i <= num; i++){
-//           for(int j = 1; j <= num; j++){
-//               System.out.println(i + "!")
-         // }
-       //}
-//}
+   public static long factorial() {
+      Scanner numFactorial = new Scanner(System.in);
+
+      System.out.println("Enter an integer between 1 and 10.");
+       long num = numFactorial.nextLong();
+       long sum = 0;
+     for(int i = 1; i <= num; i++){
+         sum =  1;
+                System.out.print( i + "! = ");
+          for(int j = 1; j <= i; j++){
+              System.out.print(" x " + j);
+              sum = sum * j;
+              if(j == i){
+                  System.out.println(" = " + sum);
+              }
+
+         }
+
+
+       }
+return sum;
+}
+
     }
+
 
 
