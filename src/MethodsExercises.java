@@ -101,15 +101,14 @@ public class MethodsExercises {
          sum =  1;
                 System.out.print( i + "! = ");
           for(int j = 1; j <= i; j++){
-              System.out.print(" x " + j);
+              System.out.print(j);
               sum = sum * j;
               if(j == i){
                   System.out.println(" = " + sum);
+              }else {
+                  System.out.print(" x ");
               }
-
          }
-
-
        }
 return sum;
 }

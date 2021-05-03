@@ -3,24 +3,38 @@ import java.util.Scanner;
 public class Person {
 
     private String name;
-    public String Person(){
-        return this.name;
-    }
-    public String getName(){
-//TODO: return the person's name
-        return this.name;
+
+    public Person(String name) {
+        this.name = name;
+
     }
 
-    public void setName(String name){
+    public String getName() {
+//TODO: return the person's name
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
 //TODO: change the name property to the passed value
     }
-    public void sayHello(){
+
+    public void sayHello() {
+        System.out.println("Hello " + name);
 //TODO: print a message to the console using the person's name
+
     }
 
-    public static void main (String [] args){
-        Scanner scString = new Scanner(System.in);
-        Person ajd = new Person();
-
+    public static void main(String[] args) {
+        //Scanner scString = new Scanner(System.in);
+        Person ajd = new Person("Michael Jackson");
+        System.out.println("This is the person's name: " + ajd.getName());
+        ajd.setName("Miriam Anderson");
+        System.out.println("This is the person's name: " + ajd.getName());
+        ajd.sayHello();
+//    Person person1 = new Person("John");
+//    Person person2 = new Person("John");
+//System.out.println(person1.getName().equals(person2.getName()));
+//System.out.println(person1 == person2);
     }
 }
