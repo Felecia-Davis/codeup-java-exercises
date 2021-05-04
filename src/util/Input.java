@@ -7,9 +7,14 @@ public class Input {
     private Scanner scanner = new Scanner(System.in);
     public String getString(){
         return this.scanner.nextLine();
+
     };
      public boolean yesNo() {
-         return this.scanner.nextBoolean();
+         if(scanner.nextLine().equals("Yes") || scanner.nextLine().equals("yes")){
+             return true;
+         }else {
+             return false;
+         }
      };
 
      public int getInt(int min, int max){
@@ -24,7 +29,9 @@ public class Input {
             System.out.println("Your number is not in range.");
             return getInt(min, max);
         }
-         };
+         }
+
+
 
         public double getDouble(double min, double max){
         System.out.println("Enter a number between " + min + " and " + max);

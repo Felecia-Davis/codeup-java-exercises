@@ -51,7 +51,9 @@ public class ControlFlowExercises {
 ////        For numbers which are multiples of both three and five: print “FizzBuzz”.
 //
 //        for(int i = 1; i <= 100; i++) {
+        //i+=1
 //            if((i % 3 == 0)  && (i % 5 == 0)) {
+        //(i%15)
 //                System.out.println("FizzBuzz");
 //            }else if(i % 3 == 0){
 //            System.out.println("Fizz");
@@ -63,6 +65,7 @@ public class ControlFlowExercises {
 //
         Scanner newTable = new Scanner(System.in);
         boolean yes;
+        //boolean userContinue = true;
         do {
             System.out.println("What number would you like to go up to?");
             int theNum = newTable.nextInt();
@@ -71,7 +74,7 @@ public class ControlFlowExercises {
             System.out.println("------  |  -------   |  -----");
             for (int i = 1; i <= theNum; i++) {
                 System.out.println(i + "       |" + i * i + "           | " + i * i * i);
-
+                System.out.printf("%d | %d | %d")
             }
             System.out.print("Continue[y/N]\n");
             String answer = newTable.next();
