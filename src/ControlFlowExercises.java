@@ -74,7 +74,7 @@ public class ControlFlowExercises {
             System.out.println("------  |  -------   |  -----");
             for (int i = 1; i <= theNum; i++) {
                 System.out.println(i + "       |" + i * i + "           | " + i * i * i);
-                System.out.printf("%d | %d | %d")
+                System.out.printf("%d | %d | %d");
             }
             System.out.print("Continue[y/N]\n");
             String answer = newTable.next();
