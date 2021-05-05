@@ -15,8 +15,13 @@ public class Rectangle {
         length = aLength;
 
     }
+//    public Rectangle(){
+//        width = 0;
+//        length = 0;
+//    }
 
     public int getArea(){
+
         return length * width;
     }
 
