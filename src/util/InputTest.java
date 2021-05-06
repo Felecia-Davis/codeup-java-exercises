@@ -8,9 +8,10 @@ public class InputTest {
 //    System.out.print(star);
 //    }
 
-       // in.yesNo();
+        in.yesNo();
+       // in.getDouble(1,10);
 
-        in.getInt(1, 10);
+        //in.getInt(1, 10);
 
     }
 }

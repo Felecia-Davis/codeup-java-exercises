@@ -10,9 +10,14 @@ public class Input {
 
     };
      public boolean yesNo() {
-         if(scanner.nextLine().equals("Yes") || scanner.nextLine().equals("yes")){
+         System.out.println("Enter Yes/y or No");
+         String userInput = scanner.nextLine();
+
+         if(userInput.equals("Yes") | userInput.equals("Y") | userInput.equals("yes") | userInput.equals("y")){
+             System.out.println("Your answer is true");
              return true;
-         }else {
+         }else  {
+             System.out.println("Your answer is false");
              return false;
          }
      };
@@ -30,7 +35,9 @@ public class Input {
             return getInt(min, max);
         }
          }
-
+    public int getInt(){
+         return this.scanner.nextInt();
+    }
 
 
         public double getDouble(double min, double max){
@@ -45,7 +52,10 @@ public class Input {
             System.out.println("Your number is not in range.");
             return getDouble(min, max);
         }
-         };
+         }
+         public double getDouble(){
+            return this.scanner.nextDouble();
+         }
         }
 
 

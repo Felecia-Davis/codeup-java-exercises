@@ -11,17 +11,12 @@ public class Rectangle {
     protected int length;
 
     public Rectangle(int aWidth, int aLength){
-        width = aWidth;
-        length = aLength;
+        this.width = aWidth;//put this in front.
+        this.length = aLength;
 
     }
-//    public Rectangle(){
-//        width = 0;
-//        length = 0;
-//    }
 
     public int getArea(){
-
         return length * width;
     }
 
