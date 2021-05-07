@@ -6,22 +6,36 @@ package shapes;
 //perimeter = 2 x length + 2 x width
 //        area = length x width
 
-public class Rectangle {
-    protected  int width;
-    protected int length;
+//public class Rectangle extends Quadrilateral implements Measurable{
 
-    public Rectangle(int aWidth, int aLength){
-        this.width = aWidth;//put this in front.
-        this.length = aLength;
-
-    }
-
-    public int getArea(){
-        return length * width;
-    }
-
-    public int getPerimeter(){
-        return  2 * (length + width);
-
-    }
-}
+//    protected Rectangle(double width, double length){
+//        super(width,length);
+//
+//    }
+//    @Override
+//    public double getPerimeter() {
+//        return 0;
+//    }
+//
+//    @Override
+//    public double getArea() {
+//        return 0;
+//    }
+//    protected  int width;
+//    protected int length;
+//
+//    public Rectangle(int aWidth, int aLength){
+//        this.width = aWidth;//put  the word this in front.
+//        this.length = aLength;
+//
+//    }
+//
+//    public int getArea(){
+//        return length * width;
+//    }
+//
+//    public int getPerimeter(){
+//        return  2 * (length + width);
+//
+//    }
+//}
