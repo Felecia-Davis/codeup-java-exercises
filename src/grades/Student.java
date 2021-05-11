@@ -9,7 +9,7 @@ public class Student {
     public void setName(String name){
          this.name = name;
     }
-    Student (String name){ //Student constructor is needed.
+    public Student (String name){ //Student constructor is needed.
         this.name = name;
         this.grades =  new ArrayList<>();
 
@@ -47,6 +47,9 @@ public class Student {
         mark.addGrade(89);
         System.out.println(mark.getName());
         System.out.println( mark.getGradeAverage());
+
+
+
 
 
     }
