@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -38,7 +40,7 @@ public class HelloWorld {
 //        y-=x;
 
         double pi = 3.14159;
-        System.out.format("The value of pi is approximately %.2f\n", pi);
+       System.out.format("The value of pi is approximately %.2f\n", pi);
 
        Scanner practice = new Scanner(System.in);
 //        System.out.println("Please enter an integer.");
@@ -51,11 +53,13 @@ public class HelloWorld {
 //        String thirdWord = practice.next();
 //
 //        System.out.printf("These are your three words, %s\n %s\n %s\n", firstWord, secondWord, thirdWord);
-        //String sentence = practice.nextLine();
-        System.out.println("Please enter a sentence");
-        String sentence = practice.nextLine();
+//        //String sentence = practice.nextLine();
+//        System.out.println("Please enter a sentence");
+//        String sentence = practice.nextLine();
+//
+//        System.out.printf("Your sentence is %s ",sentence);//adding to the print line seemed to make the difference with the scanner.nextLine().
 
-        System.out.printf("Your sentence is %s ",sentence);//adding to the print line seemed to make the difference with the scanner.nextLine().
+
 
 
     }

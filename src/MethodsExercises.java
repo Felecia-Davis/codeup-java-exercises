@@ -113,6 +113,62 @@ public class MethodsExercises {
 return sum;
 }
 
+public static void diceRoll(){
+         int diceRoll1;
+         int diceRoll2;
+         int diceSides;
+
+    Scanner dice = new Scanner(System.in);
+    System.out.println("What are the number of side of sides for the dice?");
+    diceSides = dice.nextInt();
+    diceRoll1 = (int) Math.random();
+    diceRoll2 = (int) Math.random();
+
+    switch(diceRoll1) {
+        case 1:
+            System.out.println("Your roll is a one.");
+            break;
+        case 2:
+            System.out.println("You rolled a two");
+            break;
+        case 3:
+            System.out.println("You rolled a three.");
+            break;
+        case 4:
+            System.out.println("Your rolled a four.");
+            break;
+        case 5:
+            System.out.println("You rolled a five.");
+            break;
+        case 6:
+            System.out.println("You rolled a six.");
+            break;
+    }
+
+        switch(diceRoll2){
+            case 1:
+                System.out.println("Your roll is a one.");
+                break;
+            case 2:
+                System.out.println("You rolled a two");
+                break;
+            case 3:
+                System.out.println("You rolled a three.");
+                break;
+            case 4:
+                System.out.println("Your rolled a four.");
+                break;
+            case 5:
+                System.out.println("You rolled a five.");
+                break;
+            case 6:
+                System.out.println("You rolled a six.");
+                break;
+
+    }
+
+}
+
     }
 
 
